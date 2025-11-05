@@ -1,0 +1,321 @@
+/* 🎨 Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* 🔗 Enlaces */
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 🧱 Contenedor de alojamientos */
+.alojamientos {
+  display: flex;
+  flex-wrap: wrap;           
+  justify-content: center;   
+  gap: 20px;                 
+  padding: 20px;             
+}
+
+
+/* 🏨 Tarjetas de alojamiento */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 250px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3, .card h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* 🔘 Botones dentro de tarjetas */
+.card a {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.card a:hover {
+  background-color: #2176bd;
+}
+
+/* 🔴 Botón de eliminar */
+.card a.remove {
+  background-color: #e74c3c;
+}
+
+.card a.remove:hover {
+  background-color: #c0392b;
+}
+
+/* 🚪 Cerrar sesión */
+.logout {
+  display: block;
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.logout a {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.logout a:hover {
+  background-color: #c0392b;
+}
+
+/* 🧭 Estilos del formulario de login y registro */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.form-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-box h2 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.form-box label {
+  display: block;
+  text-align: left;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-box input:focus {
+  border-color: #3498db;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-box button:hover {
+  background-color: #2176bd;
+}
+
+.form-box p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.form-box a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.form-box a:hover {
+  text-decoration: underline;
+}
+
+/* 🧭 ===== ESTILOS PANEL ADMINISTRADOR ===== */
+
+.admin-header {
+  text-align: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 0 0 15px 15px;
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.admin-header p {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #d0d6dc;
+}
+
+/* 🔘 Botón de cerrar sesión */
+.logout {
+  display: block;
+  text-align: right;
+  padding: 15px 25px;
+}
+
+.logout a {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.logout a:hover {
+  background-color: #c0392b;
+}
+
+/* 🧱 Formulario de agregar alojamiento */
+.admin-form {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  padding: 30px 40px;
+}
+
+.admin-form h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.admin-form label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-top: 10px;
+}
+
+.admin-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.admin-form input:focus {
+  border-color: #3498db;
+}
+
+.admin-form button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.admin-form button:hover {
+  background-color: #2176bd;
+}
+
+/* 🏨 Tarjetas de alojamientos */
+.admin-alojamientos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.admin-alojamientos .card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 260px;
+}
+
+.admin-alojamientos .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.admin-alojamientos img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
